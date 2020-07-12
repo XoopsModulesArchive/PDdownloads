@@ -1,0 +1,81 @@
+     - PD Downloads 1.2 -
+---------------------------------------------------
+[added] Gijoe's DUPLICATABLE V2
+[added] Xoops Token System
+[added] Statistic (admin-side)
+[added] Upgrade and Import Tool (admin-side)
+[added] you can now reset the download counter (admin-side)
+[added] category icons for Sub-Categories -> thx to gibaphp (user-side)
+[added] option to auto-approve downloads to every group (incl anonymous) or not (admin-side)
+[added] you can now choose if you want to show the newest downloads on the module-start page (user-side)
+[added] rss-feeds and a option to enable or disable this feature (user and admin-side)
+[added] when submitting a download you will now see the allowed upload-file-size (user and admin-side)
+[added] function for checking the upload-folders, for making them and setting the permission for them (admin-side)
+[added] permission query for brokenfile.php, ratefile.php, submit.php and visit.php (user-side)
+[added] select and uploading screenshots when submitting a download (user-side)
+[added] my downloads - every user can now list all the downloads he/she has submitted (user-side)
+
+[changed] You can now choose how many categories and sub-categories will be shown side by side (user-side) -> thx to gibaphp
+[changed] Some Icons have been changed
+[changed] look of side navigation - now using renderImageNav instead of renderNav (user and admin-side)
+[changed] look of the administration menu (admin-side)
+[changed] Byte to KB in the field "file-size" when submitting a new download (user and admin-side)
+[changed] upload-folder, the new standard upload-folder (except pictures) is xoops-url/uploads/modulename
+[changed] many minor changes
+
+[updated] gijoe's myblocksadmin to version 0.41
+[updated] waiting content plugin -> based on the plugin done by flying.tux
+[updated] sitemap plugin with permission query
+[updated] many minor things
+
+[optimized] reduced sql queries on all pages (user-side) -> thx to frankblack for some tipps and tricks
+[optimized] "show the newest downloads on module-start page" feature (user-side)
+[optimized] the "post a news from a download up to 3 news-module" feature (admin-side)
+
+[fixed] problems with notifications (user-side)
+[fixed] a problem with the uploader - it was possible to upload files which where not allowed by mimetypes settings, you got a error message but the file was saved on the webspace (user and admin-side)
+[fixed] ordering downloads by alphabet (user-side)
+[fixed] problems with xoops 2.2 (user and admin-side) -> thx to sunny93 for the cooperation
+[fixed] some little bugs with listening downloads (user-side)
+[fixed] php 5.0 problems (user-side)
+[fixed] a small bug with display the right language-variable for downloads (if a download is updated or new)
+[fixed] max upload-file-size displayed a wrong value and its not possible anymore to allow a bigger upload-filesize than your
+php-settings are allow you to upload (admin-side)
+[fixed] some bugs regarding the management of votes (admin-side)
+[fixed] when deleting a download/category not all things was deleted for example permissions for that download/category - now everything will be deleted correctly (admin-side)
+
+
+     - PD Downloads 1.0 -
+---------------------------------------------------
+[removed] Limitations feature
+[removed] Lizenz feature
+[removed] requirments feature
+[removed] mirror feature
+[removed] price feature
+[removed] review feature
+[removed] paypalemail feature
+
+[added] intelligent broken-file edit feature
+[added] auto suffix when you set that a news for that download should be published (when you dont set a specific name for the news)
+[added] you can post a news from a download up to 3 news-moduls
+[added] gijoes myblocksadmin 0.27
+[added] sitemap plugin (without permission check at the moment)
+[added] newest downloads will be listed on the module-start page
+[added] update-script (from wf-downloads to pd-downloads)
+[added] you have a extra table where you can see what download is expired (admin-side)
+
+[fixed] submit.php (user-side)
+[fixed] modifying downloads now works (user-side)
+[fixed] uploading pictures now works (admin-side)
+[fixed] Recommend (tell a friend) now works correctly
+[fixed] Permissions-System now works
+[fixed] and many other bugs
+
+[changed] publisher is no longer a field where you can type in any kind of name, publisher now shows the person who have approved the download (only admin's will see that info)
+[changed] brokenfile.php - deleted some not important and useless features
+[changed] many language files changed done
+[changed] some templates corrections are done
+[changed] all blocks are clonable now
+[changed] changed the way how permissions work for submitting new downloads
+[changed] category icons (user-side)
+[changed] many minor changes

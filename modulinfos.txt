@@ -1,0 +1,16 @@
+PD-Downloads is a module to manage your downloads, you can set permissions for every downloads and category.
+Its also possible to upload files and images directly onto your webserver.
+When publishing a new download you can make a news to the news module directly and automatically, you can also make
+many other thinks like linking into your newbb-Forum.
+
+Further its possible to clone this module - so its possible that you install PD-Download two or more times.
+
+You can test PD-Downloads or you can directly upgrade from another Downloads-Module for example WF-Downloads or My-Downloads.
+It's possible to import your data from another Downloads-Module into PD-Downloads or you can upgrade to PD-Downloads.
+If you want more Informationen about that Features please look at the PD-Downloads Administration (Upgrade and Import Tool).
+
+-------------------------------------------------------------
+
+PD-Downloads is originally based on WF-Downloads 2.05a.
+There have been many significant changes, optimizations and so on.
+Please look at the Changelog (versionhistory.txt) for further informationen about the differences and changes.

@@ -1,0 +1,71 @@
+[added] _AM_PDD_ONETHING - admin.php line 342
+[added] _AM_PDD_UANDITOOL - admin.php line 49
+[added] _UI_PDD_INFO - admin.php line 361
+[added] _UI_PDD_INFOTEXT - admin.php line 362
+[added] _UI_PDD_SUREUPGADE - admin.php line 371
+[added] _UI_PDD_SUREIMPORT - admin.php line 372
+[added] _UI_PDD_PART - admin.php line 373
+[added] _UI_PDD_OPTIONS - admin.php line 391
+[added] _UI_PDD_WANTCOM - admin.php line 392
+[added] _UI_PDD_WANTNOT - admn.php line 393
+[added] _UI_PDD_WANTPERM - admin.php line 394
+[added] _AM_PDD_FILE_DUPLOADSIZE - admin.php line 283
+[added] _MD_PDD_AVAILABLE - admin.php line 166
+[added] _MD_PDD_NOTAVAILABLE - admin.php line 167
+[added] _MD_PDD_NOTWRITABLE - admin.php line 168
+[added] _MD_PDD_UPLOADPATH - admin.php line 169
+[added] _MD_PDD_UPLOADPATHINFO - admin.php line 170
+[added] _MD_PDD_CREATETHEDIR - admin.php line 171
+[added] _MD_PDD_SETMPERM - admin.php line 172
+[added] _MD_PDD_DIRCREATED - admin.php line 173
+[added] _MD_PDD_DIRNOTCREATED - admin.php line 174
+[added] _MD_PDD_PERMSET - admin.php line 175
+[added] _MD_PDD_PERMNOTSET - admin.php line 176
+[added] _AM_PDD_UPLOADS - admin.php line 177
+[added] _AM_PDD_STATISTIC - admin.php line 63
+[added] _AM_PDD_FILE_RESETCALLS - admin.php line 300
+[added] _AM_PDD_FILE_SELCAT - admin.php line 328
+[added] _AM_PDD_VIEW - admin.php 412
+[added] _AM_PDD_ENTRIES - admin.php 413
+[added] _AM_PDD_EXPIRED - admin.php 414
+[added] _AM_PDD_USENDFROM - admin.php 415
+[added] _AM_PDD_TOTAL - admin.php 416
+[added] _AM_PDD_DLSTAT - admin.php 417
+[added] _AM_PDD_DLSTAT1 - admin.php 418
+[added] _AM_PDD_DLSTAT2 - admin.php 419
+[added] _AM_PDD_DLSTAT3 - admin.php 420
+[added] _AM_PDD_CREATERSTAT - admin.php 421
+[added] _AM_PDD_CREATERSTAT1 - admin.php 422
+[added] _AM_PDD_CREATERSTAT2 - admin.php 423
+[added] _AM_PDD_CREATERSTAT3 - admin.php 424
+[added] _AM_PDD_CREATERSTAT4 - admin.php 425
+[added] _AM_PDD_DOWN_MAXEXECTIME - admin.php 126
+[added] _AM_PDD_FCATEGORY_GROUPPROMPT - admin.php 337
+[added] _AM_PDD_VOTEDELETED - admin.php 245
+[added] _MD_PDD_CREATEMANUAL - admin.php 168
+[added] _MD_PDD_CHMODMANUAL - admin.php 169
+[added] _AM_PDD_SUB_WANTTOAPPROVE - admin.php 192
+
+[added] _MI_PDD_AUTOAPPROVEFORALL - modinfo.php 74
+[added] _MI_PDD_AUTOAPPROVEFORALLDSC - modinfo.php 75
+[added] _MI_PDD_RSS - modinfo.php 131
+[added] _MI_PDD_RSSDSC - modinfo.php 132
+[added] _MI_PDD_SHOWDLONINDEX - modinfo.php 56
+[added] _MI_PDD_SHOWDLONINDEXDSC - modinfo.php 57
+[added] _MI_PDD_SMNAME4 - modinfo.php 28
+
+[added] _MD_PDD_SELCAT - main.php line 131
+[added] _MD_PDD_UPLOAD_FILESIZE - main.php 64
+[added] _MD_PDD_NOCAT - main.php 15
+[added] _AM_PDD_SHOTIMAGE - main.php 68
+[added] _AM_PDD_IMAGEEXIST - main.php 173
+[added] _MD_PDD_NOUSER - main.php 15
+[added] _AM_PDD_MYTOTAL - main.php 27
+
+[deleted] _AM_PDD_MCOMMENTS - admin.php 60
+
+[changed] _AM_PDD_FILE_SIZE - admin.php 286
+
+[changed] _MD_PDD_FILESIZEC - main.php 66
+
+[changed] _MI_PDD_ALLOWUPLOADSDSC - modinfo.php 88

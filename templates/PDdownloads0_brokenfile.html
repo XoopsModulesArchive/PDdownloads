@@ -1,0 +1,28 @@
+<{if $catarray.imageheader != ""}>
+	<br /><div align="center"><{$catarray.imageheader}></div><br />
+<{/if}>
+
+<{if $brokenreport == true}>
+ <div align="center">
+  <h4><{$smarty.const._MD_PDD_RESOURCEREPORTED}></h4>
+   <div><{$smarty.const._MD_PDD_RESOURCEREPORTED2}></div><br />
+   <div><b><{$smarty.const._MD_PDD_FILETITLE}></b><{$broken.title}></div>
+   <div><b><{$smarty.const._MD_PDD_DATEREPORTED}></b> <{$broken.date}></div>
+ </div>
+<{else}>
+ <div align="center">
+  <h4><{$smarty.const._MD_PDD_BROKENREPORT}></h4>
+  <div><{$smarty.const._MD_PDD_THANKSFORHELP}></div>
+  <div><{$smarty.const._MD_PDD_FORSECURITY}></div><br />
+
+  <div><{$smarty.const._MD_PDD_BEFORESUBMIT}></div><br />
+  <div><b><{$smarty.const._MD_PDD_HOMEPAGEC}></b><{$down.homepage}></div><br />
+  <div><b><{$smarty.const._MD_PDD_FILETITLE}></b><{$down.title}></div>
+  <div><b><{$smarty.const._MD_PDD_PUBLISHER}>:</b> <{$down.publisher}></div>
+  <div><b><{$down.subdate}>:</b> <{$down.updated}></div>
+  <form action="brokenfile.php" method="POST">
+    <input type="hidden" name="lid" value="<{$file_id}>" /><input type="submit" name="submit" value="<{$smarty.const._MD_PDD_SUBMITBROKEN}>" alt="<{$smarty.const._MD_PDD_SUBMITBROKEN}>" /><{$token}>
+	&nbsp;<input type="button" value="<{$smarty.const._MD_PDD_CANCEL}>" alt="<{$smarty.const._MD_PDD_CANCEL}>" onclick="javascript:history.go(-1)" />
+  </form>
+ </div>
+<{/if}>

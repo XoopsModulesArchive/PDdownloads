@@ -1,0 +1,75 @@
+<{if $show_categort_title == true}>
+ <div style="margin-bottom: 4px;"><b><{$smarty.const._MD_PDD_CATEGORYC}></b><{$down.category}></div>
+<{/if}>
+
+<table width="100%" cellspacing="1" cellpadding="2">
+  <tr>
+    <td width="82%" align="left">
+	 <font color="#2F5376"><b><{$down.title}></b></font> <{$down.icons}>
+	</td>
+    <td width="18%" align="right" nowrap="nowrap">
+	 <a href="singlefile.php?cid=<{$down.cid}>&lid=<{$down.id}>">
+	 	<span class="itemTitle"><{$smarty.const._MD_PDD_VIEWDETAILS}></span></a>
+	</td>
+  </tr>
+  <tr>
+    <td height="1" colspan="2" bgcolor="#000000"></td>
+  </tr>
+  <tr>
+    <td colspan="2">
+		 <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+  		 <tr class="even">
+    	  <td width="50%"><small><b><{$smarty.const._MD_PDD_SUBMITTER}>:</b> <{$down.submitter}> 
+		  	<{$down.adminlink}></small></td>
+    	   <td><div align="right"><small><b><{$down.subdate}>:</b>&nbsp;&nbsp;
+		   	<{$down.updated}></small></div></td>
+		  </tr>
+      <tr>
+        <td colspan="2">&nbsp;</td>
+      </tr>
+      <tr>
+		  <td width="65%" height = "133" valign="top">
+        	<{if $show_screenshot == true}>
+				<{if $down.screenshot_full != ''}>
+				<div>
+					<a href="<{$xoops_url}>/<{$shots_dir}>/<{$down.screenshot_full}>" target="_blank">
+					<img src="<{$down.screenshot_thumb}>" alt="" vspace="3" hspace="7" align="right" style='border: 1px solid black' />
+					</a>
+				</div>
+			<{/if}>
+			<{/if}>
+			<div style="margin-left: 6px;" align="justify">
+	 		<a href="visit.php?cid=<{$down.cid}>&lid=<{$down.id}>" target="_blank">
+	 		<img src="images/icon/downloads.gif" alt="" align="absmiddle" /> 
+			<{$smarty.const._MD_PDD_DOWNLOADNOW}></a></div>
+			<br />
+			<div style="margin-left: 6px;margin-right: 6px" align="justify"><{$down.description}>
+	 </div>
+		  </td>
+        <td width="25%">
+		 <div class="outer"><div class="even">
+		   <div><b><{$smarty.const._MD_PDD_VERSION}>:</b>&nbsp;<{$down.version}></div>
+			<div><b><{$smarty.const._MD_PDD_DOWNLOADHITS}></b><{$down.hits}></div>
+			<div><b><{$smarty.const._MD_PDD_FILESIZE}>:</b>&nbsp;<{$down.size}></div>
+			<div><b><{$smarty.const._MD_PDD_SUPPORTEDPLAT}>:</b>&nbsp;<{$down.platform}></div>
+			<div><b><{$smarty.const._MD_PDD_HOMEPAGE}>:</b>&nbsp;<{$down.homepage|wordwrap:50:"\n":true}></div>			
+		 </div></div>
+		<br />
+		<div class = "outer">
+			<small><b><{$smarty.const._MD_PDD_RATINGC}></b>&nbsp;<img src="images/icon/<{$down.rateimg}>" alt="" align="absmiddle" />&nbsp;&nbsp;(<{$down.votes}>)</small>
+		</div>		
+		</td>
+      </tr>
+</table>
+  </tr>
+</table>
+    	  <div class="even" align="center"><small> 
+		   <a href="ratefile.php?cid=<{$down.cid}>&lid=<{$down.id}>">
+		   	<{$smarty.const._MD_PDD_RATETHISFILE}></a> | 
+		   <a href="brokenfile.php?lid=<{$down.id}>">
+		   	<{$smarty.const._MD_PDD_REPORTBROKEN}></a> | 
+		   <a target="_top" href="mailto:?subject=<{$down.mail_subject}>&body=<{$down.mail_body}>">
+		   	<{$smarty.const._MD_PDD_TELLAFRIEND}></a> | 
+		   <a href="singlefile.php?cid=<{$down.cid}>&lid=<{$down.id}>">
+		   	<{$smarty.const._COMMENTS}> (<{$down.comments}>)</a>
+    	   </small></div><br />

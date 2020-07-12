@@ -1,0 +1,138 @@
+<{if $down.imageheader != ""}>
+<div align="center"><{$down.imageheader}></div><br />
+<{/if}>
+<{if $show_rss}>
+<table cellpadding="0" cellspacing="0">
+<tr><td width="100%" class="even"><b><{$down.path}></b></td><td align="right" class="even" valign="middle"><{$rss_logo}></td></tr></table><br />
+<{else}>
+<div class="even"><b><{$down.path}></b></div><br /><{/if}>
+
+<table cellspacing="0" cellpadding="0"> 
+  <tr> 
+    <td>
+	<tr> 
+          <td valign="top"> 
+			<h3 style="color: #2F5376;"><{$down.title}></h3>
+			<table width="100%"  border="0">
+  <tr>
+    <td><div style="margin-left: 6px;">
+	<a href="visit.php?cid=<{$down.cid}>&lid=<{$down.id}>" target="_blank">
+	<img src="images/icon/downloads.gif" alt="" align="absmiddle" /> 
+	<{$smarty.const._MD_PDD_DOWNLOADNOW}></a></div>
+ </td>
+    <td><{if $down.forumid > 0}><div style="margin-right: 6px;" align="right">
+  				<a href="<{$xoops_url}>/modules/newbb/viewforum.php?forum=<{$down.forumid}>">
+					<{$smarty.const._MD_PDD_INFORUM}> <img src="images/icon/forum.gif" align="absmiddle" alt="<{$smarty.const._MD_PDD_INFORUM}>" />
+				</a></div>
+ 			<{/if}>
+			</td>
+  </tr>
+</table>
+<br />
+		  	<div style="margin-right: 6px;" align="justify"><b><{$smarty.const._MD_PDD_DESCRIPTIONC}></b><br />
+            <{$down.description}></div> 
+            <br /> 
+<{if $down.features != ''}> 
+            <b><{$smarty.const._MD_PDD_FEATURES}></b></div> 
+            <ul><{foreach item=features from=$down.features}> 
+              <li><{$features}></li> 
+<{/foreach}></ul></div> 
+            <br /> 
+<{/if}> 
+<{if $down.history != ''}>
+<div align="justify"><b><{$smarty.const._MD_PDD_HISTORY}></b><br />
+            <{$down.history}></div> 
+          <br /><{/if}></td> 
+          <td width="35%"> <div class="outer"><div class="even">
+<{if $xoops_isadmin}>
+			  <b><{$smarty.const._MD_PDD_SUBMITTER}>:</b>&nbsp;<{$down.submitter}><br>
+			  <b><{$smarty.const._MD_PDD_PUBLISHER}>:</b>&nbsp;<{$down.publisher}><br>
+              <b><{$down.subdate}>:</b>&nbsp;<{$down.updated}><br>
+              <br /> 
+              <b><{$smarty.const._MD_PDD_VERSION}>:</b>&nbsp;<{$down.version}><br>
+              <b><{$smarty.const._MD_PDD_DOWNLOADHITS}></b><{$down.hits}><br>
+              <b><{$smarty.const._MD_PDD_FILESIZE}>:</b>&nbsp;<{$down.size}><br>
+  		      <b><{$smarty.const._MD_PDD_SUPPORTEDPLAT}>:</b>&nbsp;<{$down.platform}><br>
+              <b><{$smarty.const._MD_PDD_HOMEPAGE}>:</b>&nbsp;<{$down.homepage}><br>
+<{else}>
+			  <b><{$smarty.const._MD_PDD_SUBMITTER}>:</b>&nbsp;<{$down.submitter}><br>
+              <b><{$down.subdate}>:</b>&nbsp;<{$down.updated}><br>
+              <br /> 
+              <b><{$smarty.const._MD_PDD_VERSION}>:</b>&nbsp;<{$down.version}><br>
+              <b><{$smarty.const._MD_PDD_DOWNLOADHITS}></b><{$down.hits}><br>
+              <b><{$smarty.const._MD_PDD_FILESIZE}>:</b>&nbsp;<{$down.size}><br>
+  		      <b><{$smarty.const._MD_PDD_SUPPORTEDPLAT}>:</b>&nbsp;<{$down.platform}><br>
+              <b><{$smarty.const._MD_PDD_HOMEPAGE}>:</b>&nbsp;<{$down.homepage}><br>
+<{/if}>			  
+            </div>  </div>
+            <br /> 
+            <div class="outer"> <small><b><{$smarty.const._MD_PDD_RATINGC}></b>&nbsp;<img src="images/icon/<{$down.rateimg}>" alt="" align="absmiddle" />&nbsp;(<{$down.votes}>)</small></div> 
+            <br />
+			<div class="outer"><b><{$smarty.const._MD_PDD_DOWNTIMES}></b><br>
+			  <{$down.downtime}></div> 
+<{if $show_screenshot == true}> 
+	<{if $down.screenshot_full}>
+	<br />
+	<div class="outer"><b><{$smarty.const._MD_PDD_SCREENSHOT}></b>
+			  <div align="center">
+				<a href="<{$xoops_url}>/<{$shots_dir}>/<{$down.screenshot_full}>" target="_blank">
+					<img src="<{$down.screenshot_thumb}>" alt="" vspace="3" hspace="7" align="center" />
+					</a> </div> </div> 
+             <{/if}><{/if}>
+          </td> 
+        </tr> 
+</table>
+<br />
+<{if $xoops_isadmin}>
+<table>
+        <tr> 
+          <td width="170" class="even"><div align="center"><{$down.adminlink}></div></td>
+		  <td class="even"> <small> 
+            <div align="center"> <a href="ratefile.php?cid=<{$down.cid}>&lid=<{$down.id}>"><{$smarty.const._MD_PDD_RATETHISFILE}></a> | <a href="brokenfile.php?lid=<{$down.id}>"><{$smarty.const._MD_PDD_REPORTBROKEN}></a> | <a href="submit.php?lid=<{$down.id}>">
+			 <{$smarty.const._MD_PDD_MODIFY}></a> | <a target="_top" href="mailto:?subject=<{$down.mail_subject}>&body=<{$down.mail_body}>"><{$smarty.const._MD_PDD_TELLAFRIEND}></a> | <a href="singlefile.php?cid=<{$down.cid}>&lid=<{$down.id}>"><{$smarty.const._COMMENTS}> (<{$down.comments}>)</a> </div> 
+          </small> </td> 
+        </tr> 
+</table> 
+<{else}>
+<{if $xoops_isuser}>
+ 		<small> 
+		<div class="even" align="center"> <a href="ratefile.php?cid=<{$down.cid}>&lid=<{$down.id}>"><{$smarty.const._MD_PDD_RATETHISFILE}></a> | <a href="brokenfile.php?lid=<{$down.id}>"><{$smarty.const._MD_PDD_REPORTBROKEN}></a> | <a href="submit.php?lid=<{$down.id}>">
+		 <{$smarty.const._MD_PDD_MODIFY}></a> | <a target="_top" href="mailto:?subject=<{$down.mail_subject}>&body=<{$down.mail_body}>"><{$smarty.const._MD_PDD_TELLAFRIEND}></a> | <a href="singlefile.php?cid=<{$down.cid}>&lid=<{$down.id}>"><{$smarty.const._COMMENTS}> (<{$down.comments}>)</a> </div> 
+		</small> 
+<{else}>
+		<small> 
+		<div class="even" align="center"> <a href="ratefile.php?cid=<{$down.cid}>&lid=<{$down.id}>"><{$smarty.const._MD_PDD_RATETHISFILE}></a> | <a href="brokenfile.php?lid=<{$down.id}>"><{$smarty.const._MD_PDD_REPORTBROKEN}></a> | <a target="_top" href="mailto:?subject=<{$down.mail_subject}>&body=<{$down.mail_body}>"><{$smarty.const._MD_PDD_TELLAFRIEND}></a> | <a href="singlefile.php?cid=<{$down.cid}>&lid=<{$down.id}>"><{$smarty.const._COMMENTS}> (<{$down.comments}>)</a> </div> 
+		</small><{/if}><{/if}>
+<br />
+<b><{$smarty.const._MD_PDD_OTHERBYUID}></b> <{$down.submitter}>
+<table border="0" cellspacing="1" cellpadding="2">
+  <tr>
+    <{foreach item=down_user from=$down_uid}>
+	<td>
+     <div style="margin-left: 10px;">
+	 	<a href="singlefile.php?cid=<{$down_user.cid}>&lid=<{$down_user.lid}>"><{$down_user.title}></a> 
+		(<{$down_user.published}>)
+	 </div> 
+	</td>
+	<{if 20 is div by 2}>
+  </tr><tr>
+    <{/if}>
+  	<{/foreach}>
+  </tr>
+</table> 
+<br /> 
+<div align="center"><{$lang_copyright}></div>
+<div style="text-align: center; padding: 3px; margin:3px;">
+  <{$commentsnav}>
+  <{$lang_notice}>
+</div>
+<!-- start comments loop -->
+<{if $comment_mode == "flat"}>
+  <{include file="db:system_comments_flat.html"}>
+<{elseif $comment_mode == "thread"}>
+  <{include file="db:system_comments_thread.html"}>
+<{elseif $comment_mode == "nest"}>
+  <{include file="db:system_comments_nest.html"}>
+<{/if}>
+<!-- end comments loop -->
+<{include file="db:system_notification_select.html"}>
